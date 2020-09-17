@@ -538,7 +538,6 @@ template {
     border: none;
     background-color: #ffffff;
     cursor: pointer;
-    padding: 0;
   }
   .menu-button__line {
     width: 16px;
