@@ -25,6 +25,13 @@
   &-description
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 .stars
   flex-basis: 100%
 .star 
@@ -94,5 +101,95 @@
       left: 16px
       background: url(../img/arrow-prev.svg) no-repeat center
       background-size: 10px
-
+.booking
+  width: 350px
+  height: 210px
+  padding: 28px
+  border-radius: 8px
+  background: $dark
+  color: $light
+  font-family: "Nunito", sans-serif
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+  &__room
+    margin-top: 4px
+    min-width: 80px
+  &__start
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__tag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__description
+    display: block
+    position: relative
+    margin-bottom: 8px
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+    text-align: right
+    &:first-child:before
+      position: absolute
+      left: 0
+      width: 14px
+      height: 14px
+      content: url("../img/person.svg")
+    &:last-child:before
+      content: url("../img/home.svg")
+      position: absolute
+      left: 0
+      width: 14px
+      height: 14px
+  &__call-center
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 17px
+  &__heading
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    min-width: 76px
+    position: relative
+    text-align: right
+    text-decoration: none
+    color: inherit
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    &:before
+      content: url("../img/call.svg")
+      position: absolute
+      left: 0
+      width: 14px
+      height: 14px
+  &__button
+    width: 100%
+    min-height: 45px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    background-color: $primary
+    border: none
+    border-radius: 4px
+    color: inherit
+    cursor: pointer
+.map
+  width: 340px
+  height: 210px
 
