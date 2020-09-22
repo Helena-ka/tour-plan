@@ -5,5 +5,8 @@ var mySwiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.slider-button__next',
     prevEl: '.slider-button__prev',
-  }
+  },
+  keyboard: {
+    enabled: true
+  },
 })
