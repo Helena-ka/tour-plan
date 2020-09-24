@@ -829,10 +829,6 @@ template {
   position: relative;
   padding-top: 98px;
   padding-bottom: 87px;
-  background-image: url(../img/newletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .newsletter::before {
