@@ -901,7 +901,7 @@ template {
   top: 0;
   right: 0;
   height: 100%;
-  min-width: 65px;
+  width: 65px;
   border: none;
   background-color: #EC1F46;
   font-weight: bold;
