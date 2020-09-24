@@ -1069,7 +1069,7 @@ template {
   .hotel__slider {
     width: 590px;
   }
-  .swiper-slide__img {
+  .hotel__slider-slide__img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
