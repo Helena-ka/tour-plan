@@ -935,7 +935,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   background-color: #ffffff;
   -webkit-box-orient: vertical;
@@ -973,7 +973,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 47%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -989,12 +989,12 @@ template {
 
 .reviews-slider__button__prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 20px;
+  left: 0px;
 }
 
 .reviews-slider__button__next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 20px;
+  right: 0px;
 }
 
 .reviews-slider__profile {
@@ -1114,11 +1114,12 @@ template {
   .hotel__slider {
     margin-bottom: 30px;
   }
+  .hotel-slider {
+    height: 450px;
+    width: 100%;
+  }
   .booking {
     width: 340px;
-  }
-  .slider {
-    width: 100%;
   }
   .block-info {
     -webkit-box-orient: horizontal;
@@ -1136,12 +1137,23 @@ template {
   .newsletter-wrapper {
     max-width: 700px;
   }
+  .reviews-slider__item {
+    max-width: 579px;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 88%;
+    width: 85%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -1209,12 +1221,12 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .hotel-slider {
+    height: 179px;
+  }
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-  }
-  .slider {
-    height: 320px;
   }
   .block-info {
     -webkit-box-orient: vertical;
@@ -1255,6 +1267,35 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button__prev {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: -90px;
+  }
+  .reviews-slider__button__next {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    margin-right: -90px;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
   }
 }
 
