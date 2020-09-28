@@ -4,16 +4,18 @@
   .hotel
     &__slider
       width: 590px
-      &-slide
-        &__img
-          width: 100%
-          height: 100%
-          object-fit: cover
-          max-width: 700px
+    &-slider
+      &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        max-width: 700px
   .card
     width: 230px
     height: 230px
-
+  .packages 
+    &-wrapper
+      grid-template-rows: repeat(3, 500px)
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -184,6 +186,50 @@
   .card
     width: 100%
     padding-right: 45px
+    padding-bottom: 15px
+  .packages
+    padding-top: 30px
+    padding-bottom: 60px
+    &-wrapper
+      grid-template-rows: repeat(5, 300px)
+      grid-template-columns: 100%
+      grid-column-gap: 0
+    &-item
+      grid-template-columns: 50% 50%
+      grid-template-rows: 100%
+      &__img 
+        height: 100%
+      &__text
+        justify-content: space-between
+    &__title
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 35px
+    &__old-cost
+      font-size: 12px
+      line-height: 15px
+    &__cost
+      font-size: 20px
+      line-height: 25px
+  .first
+    grid-column: 1
+    &__description
+      display: none
+      grid-column: 
+    &__offer
+      max-width: 60px
+      width: 100%
+      min-height: 18px
+      font-style: normal
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+      padding: 4px 9px
+    &__text 
+      padding-top: 30px
+      padding-right: 21px
+      padding-bottom: 25px
+      padding-left: 32px
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -192,5 +238,29 @@
   .hotel
     &__slider
       margin-bottom: 20px
-
-  
+  .packages
+    &__order
+      flex-direction: column
+      align-items: start
+    &__price
+      margin-bottom: 10px
+  .first 
+    &__person
+      margin-bottom: 17px
+    &__rating
+      display: none
+    &__title
+      margin-top: 0
+      margin-bottom: 20px
+@media (max-width: 480px)
+  .packages
+    &-wrapper
+      grid-template-rows: repeat(5, 200px)
+    &-item
+      &__person-room
+        display: none
+      &__text
+        padding-top: 20px
+        padding-right: 21px
+        padding-bottom: 15px
+        padding-left: 18px
