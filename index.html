@@ -14,7 +14,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=34a96012-6aac-453d-a9b3-7faf311561d2&lang=ru_RU"></script>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -24,7 +24,10 @@
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search_mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -34,7 +37,7 @@
               <img src="img/search.svg" alt="icon: search" />
             </button>
           </form>
-          <a class="user navbar__user">
+          <a class="user navbar__user navbar__user_mobile_hidden">
             <img
               src="img/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -57,6 +60,31 @@
       <nav class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <a class="user navbar__user navbar__user_mobile_visible">
+                <img
+                  src="img/user-avatar.jpg"
+                  alt="avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name_light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search_mobile_visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -710,38 +738,69 @@
           <!-- /.footer__list -->
           <div class="footer__contact-details">
             <h3 class="footer__title footer__title_contact">Contact Details</h3>
-            <div class="footer__text">Feel free to contact us by phone, email or by our contact form</div>
+            <div class="footer__text">
+              Feel free to contact us by phone, email or by our contact form
+            </div>
             <ul class="footer__ul">
-              <li class="footer__item footer__information footer__information_map">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</li>
-              <li class="footer__item footer__information footer__information_call">
-              Tel (business hours) : 269 1500</br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</li>
-              <li class="footer__item  footer__information footer__information_email">cherly.lawson@example.com</li>
+              <li
+                class="footer__item footer__information footer__information_map"
+              >
+                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                States
+              </li>
+              <li
+                class="footer__item footer__information footer__information_call"
+              >
+                Tel (business hours) : 269 1500 <br />
+                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
+                pm)<br />
+                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              </li>
+              <li
+                class="footer__item footer__information footer__information_email"
+              >
+                cherly.lawson@example.com
+              </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title_send">Send us a message</h3>
             <form action="#" class="footer-form">
-              <input type="text" class="footer__input" placeholder="Your Full Name*">
-              <input type="text" class="footer__input" placeholder="Phone Number*">
-              <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+              <input
+                type="text"
+                class="footer__input"
+                placeholder="Your Full Name*"
+              />
+              <input
+                type="text"
+                class="footer__input"
+                placeholder="Phone Number*"
+              />
+              <textarea
+                cols="30"
+                rows="10"
+                class="footer__message"
+                placeholder="Message"
+              ></textarea>
               <div class="action">
                 <button class="button footer__button">Send</button>
-                <span class="footer__info">* Required Fields</span></div>
+                <span class="footer__info">* Required Fields</span>
+              </div>
             </form>
           </div>
-            <ul class="footer__extra">
-              <li class="footer__item_extra">
-                <a href="#" class="footer__link">Disclaimer</a></li>
-              <li class="footer__item_extra">
-                <a href="#" class="footer__link">Conditions of use</a></li>
-              <li class="footer__item_extra">
-                <a href="#" class="footer__link">Cancellation policy</a></li>
-            </ul>
-            <img src="img/pay.png" alt="payment" class="pay">
-
+          <ul class="footer__extra">
+            <li class="footer__item_extra">
+              <a href="#" class="footer__link">Disclaimer</a>
+            </li>
+            <li class="footer__item_extra">
+              <a href="#" class="footer__link">Conditions of use</a>
+            </li>
+            <li class="footer__item_extra">
+              <a href="#" class="footer__link">Cancellation policy</a>
+            </li>
+          </ul>
+          <img src="img/pay.png" alt="payment" class="pay" />
         </div>
         <!-- /.footer-wrapper -->
       </div>
