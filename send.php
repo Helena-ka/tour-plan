@@ -4,6 +4,7 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
+if (isset($_POST['footer-button'])) {
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -14,10 +15,37 @@ $title = "Новое обращение Best Toup plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
-<b>Почта:</b> $phone<br><br>
+<b>Телефон:</b> $phone<br>
 <b>Сообщение:</b><br>$message
 ";
+}
+if (isset($_POST['button-email'])) {
+$email = $_POST['email'];
+$email = htmlspecialchars($email);
+// Формирование самого письма
+$title = "Новая подписка на рассылку Best Toup plan";
+$body = "
+<h2>Новая подписка на рассылку</h2>
+<b>Почта:</b> $email<br>
+";
+}
+if (isset($_POST['booking-button'])) {
+// Переменные, которые отправляет пользователь
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$message = $_POST['message'];
 
+// Формирование самого письма
+$title = "Бронирование отеля Best Toup plan";
+$body = "
+<h2>Бронирование отеля</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br>
+<b>Почта:</b> $email<br>
+<b>Сообщение:</b><br>$message
+";
+}
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {

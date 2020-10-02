@@ -151,7 +151,7 @@
                 name="message"
               ></textarea>
               <div class="action">
-                <button class="button footer__button">Send</button>
+                <button class="button footer__button" name="footer-button">Send</button>
                 <span class="footer__info">* Required Fields</span>
               </div>
             </form>
