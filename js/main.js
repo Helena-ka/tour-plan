@@ -40,12 +40,19 @@ $(document).ready(function () {
     modalOverlay.addClass("modal__overlay_visible");
     modalDialog.addClass("modal__dialog_visible");
   };
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
 
   function closeModal(event) {
     event.preventDefault();
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
   };
+  $(document).one('keydown', function (e) {
+    // ESCAPE key pressed
+    if (e.keyCode == 27) {
+      modalOverlay.removeClass("modal__overlay_visible");
+      modalDialog.removeClass("modal__dialog_visible");
+    }
+  });
 });
