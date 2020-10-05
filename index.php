@@ -107,7 +107,8 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div id="map-api" class="map"></div>
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.29703101383727!3d7.838252394352195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1601875769383!5m2!1sru!2sru" width="100%" height="210" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
           </div>
           <!-- /.hotel-right -->
           <!-- /.map -->
@@ -163,7 +164,7 @@
                   <span class="packages__cost"> $ 8,500</span>
                 </div>
                 <!-- /.packages__price -->
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
               <!-- /.packages__order -->
             </div>
@@ -207,7 +208,7 @@
                   <span class="packages__cost">$ 3,000</span>
                 </div>
                 <!-- /.packages__price -->
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
               <!-- /.packages__order -->
             </div>
@@ -251,7 +252,7 @@
                   <span class="packages__cost">$ 9,500</span>
                 </div>
                 <!-- /.packages__price -->
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
               <!-- /.packages__order -->
             </div>
@@ -295,7 +296,7 @@
                   <span class="packages__cost">$ 2,500</span>
                 </div>
                 <!-- /.packages__price -->
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
               <!-- /.packages__order -->
             </div>
@@ -339,7 +340,7 @@
                   <span class="packages__cost">$ 3,500</span>
                 </div>
                 <!-- /.packages__price -->
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">Book Now</button>
               </div>
               <!-- /.packages__order -->
             </div>
@@ -366,15 +367,18 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="form subscribe newsletter__subscribe"
         >
+        <div class="subscribe__input-group">
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
           />
-          <button class="subscribe__button" name="button-email">Send</button>
+          </div>
+          <button class="subscribe__button" name="button-email">Send</button></div>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
@@ -486,7 +490,7 @@
               class="card__image"
             />
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
           <div class="card activities__card">
@@ -496,7 +500,7 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
           <div class="card activities__card">
@@ -508,7 +512,7 @@
             <h3 class="card__title">
               Tamarind falls hiking trip&nbsp;-&nbsp;full&nbsp;day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
           <div class="card activities__card">
@@ -518,7 +522,7 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
         </div>
@@ -529,4 +533,3 @@
     </section>
     <!-- /.activities -->
 <?php include("footer.php")?>
- <

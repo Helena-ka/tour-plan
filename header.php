@@ -11,7 +11,6 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link href="css/style.css" rel="stylesheet" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=34a96012-6aac-453d-a9b3-7faf311561d2&lang=ru_RU"></script>
   </head>
   <body>
     <header class="navbar navbar_mobile_fixed">

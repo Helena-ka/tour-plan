@@ -1,7 +1,7 @@
 .footer
   background-color: $dark
   color: $light
-  padding-top: 108px 
+  padding-top: 108px
   padding-bottom: 94px
   &-wrapper
     display: grid
@@ -105,8 +105,11 @@
     &_inline
       margin: 0 43px 0 0
   &__input
-    margin-bottom: 15px
-    flex-basis: 47%
+    width: 100%
+    &-group
+      margin-bottom: 15px
+      flex-basis: 47%
+      position: relative
 
   &__message
     flex-basis: 100%
@@ -117,7 +120,7 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
- 
+
   &__extra
     grid-row: span 2
     list-style: none
@@ -127,7 +130,7 @@
     padding: 0
     justify-content: space-evenly
     align-self: self-end
-.action 
+.action
   display: flex
   justify-content: space-between
   align-items: center

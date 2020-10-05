@@ -13,12 +13,13 @@
   .card
     width: 230px
     height: 230px
-  .packages 
+  .packages
     &-wrapper
       grid-template-rows: repeat(3, 500px)
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -64,7 +65,7 @@
         max-width: 579px
       &__text
         max-width: 455px
-    &__title 
+    &__title
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
@@ -269,7 +270,7 @@
       line-height: 23px
       margin-bottom: 42px
   .activities
-    padding-top: 34px 
+    padding-top: 34px
     padding-bottom: 48px
     &__title
       font-size: 18px
@@ -292,7 +293,7 @@
     &-item
       grid-template-columns: 50% 50%
       grid-template-rows: 100%
-      &__img 
+      &__img
         height: 100%
       &__text
         justify-content: space-between
@@ -310,7 +311,7 @@
     grid-column: 1
     &__description
       display: none
-      grid-column: 
+      grid-column:
     &__offer
       max-width: 60px
       width: 100%
@@ -320,7 +321,7 @@
       font-size: 8px
       line-height: 10px
       padding: 4px 9px
-    &__text 
+    &__text
       padding-top: 30px
       padding-right: 21px
       padding-bottom: 25px
@@ -348,7 +349,7 @@
       align-items: start
     &__price
       margin-bottom: 10px
-  .first 
+  .first
     &__person
       margin-bottom: 17px
     &__rating
@@ -417,11 +418,11 @@
     grid-column: span 2
     justify-self: start
     align-self: start
-  .action 
+  .action
     flex-direction: column
     align-items: flex-start
   .modal
-    &__dialog 
+    &__dialog
       padding: 15px 20px
 @media (max-width: 480px)
   .packages
@@ -437,7 +438,7 @@
         padding-left: 18px
   .navbar
     &-menu
-      &__item    
+      &__item
         margin-bottom: 18px
         &_mobile
           &_visible
@@ -456,3 +457,8 @@
   .modal
     &__message
       min-height: 80px
+@media (max-height: 520px)
+  .modal
+    &__dialog
+      overflow-y: auto
+      height: 100%

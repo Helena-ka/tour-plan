@@ -48,11 +48,40 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
   };
-  $(document).one('keydown', function (e) {
+  $(document).on('keydown', function (e) {
     // ESCAPE key pressed
     if (e.keyCode == 27) {
       modalOverlay.removeClass("modal__overlay_visible");
       modalDialog.removeClass("modal__dialog_visible");
+    }
+  });
+  //обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Provide a name",
+          minlength: "Name must be at least 2 letters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Format: name@domain.com",
+        },
+        phone: {
+          required: "Phone is required",
+          minlength: "The number must be 12 digits",
+          digits: "Please enter only numbers",
+        },
+      }
+    });
+  });
+  $('.phone').mask('+7 (ZZZ) ZZZ-ZZ-ZZ', {
+    translation: {
+      'Z': {
+        pattern: /[0-9]/,
+        optional: true
+      }
     }
   });
 });
