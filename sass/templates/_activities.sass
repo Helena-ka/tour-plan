@@ -1,6 +1,14 @@
 .activities
   padding-top: 60px
   padding-bottom: 98px
+  &__card
+    display: flex
+    flex-direction: column
+    position: relative
+    align-items: flex-start
+    width: 255px
+    height: 255px
+    transition: all 0.5s ease-out
   &__title
     font-style: normal
     font-weight: bold
@@ -15,12 +23,6 @@
     align-items: flex-start
     justify-content: space-between
 .card
-  display: flex
-  flex-direction: column
-  position: relative
-  align-items: flex-start
-  width: 255px
-  height: 255px
   padding: 24px 26px
   border-radius: 6px
   overflow: hidden

@@ -10,9 +10,10 @@
         height: 100%
         object-fit: cover
         max-width: 700px
-  .card
-    width: 230px
-    height: 230px
+  .activities
+    &__card
+      width: 230px
+      height: 230px
   .packages
     &-wrapper
       grid-template-rows: repeat(3, 500px)
@@ -75,10 +76,10 @@
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
-  .card
-    width: 339px
-    height: 255px
-    padding: 24px 110px 24px 26px
+      width: 339px
+      height: 255px
+    .card
+      padding: 24px 110px 24px 26px
   .footer
     padding: 73px 0 33px 0
     &-wrapper
@@ -279,8 +280,10 @@
       justify-content: center
     &__title
       margin-bottom: 36px
+  .activities
+    &__card
+      width: 100%
   .card
-    width: 100%
     padding-right: 45px
     padding-bottom: 15px
   .packages
@@ -462,3 +465,7 @@
     &__dialog
       overflow-y: auto
       height: 100%
+@media (min-width: 992px)
+  .activities
+    &__card:hover
+      transform: scale(1.1)

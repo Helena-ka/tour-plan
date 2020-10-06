@@ -107,7 +107,7 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.29703101383727!3d7.838252394352195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1601875769383!5m2!1sru!2sru" width="100%" height="210" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.29703101383727!3d7.838252394352195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1601875769383!5m2!1sru!2sru" class="map" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
           </div>
           <!-- /.hotel-right -->
@@ -123,7 +123,7 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-wrapper">
-          <div class="packages-item first">
+          <div class="packages-item first" data-aos="fade-right"  data-aos-duration="1000">
             <span class="offer packages__offer first__offer">Flash Offer</span>
             <!-- /.offer -->
             <img
@@ -171,7 +171,7 @@
             <!--/.packages-text-->
           </div>
           <!-- /.packages__item -->
-          <div class="packages-item">
+          <div class="packages-item" data-aos="fade-left" data-aos-duration="1000">
             <span class="offer packages__offer">Flash Offer</span>
             <!-- /.offer -->
             <img
@@ -215,7 +215,7 @@
             <!--/.packages-text-->
           </div>
           <!-- /.packages__item -->
-          <div class="packages-item">
+          <div class="packages-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
             <span class="offer packages__offer">Flash Offer</span>
             <!-- /.offer -->
             <img
@@ -259,7 +259,7 @@
             <!--/.packages-text-->
           </div>
           <!-- /.packages__item -->
-          <div class="packages-item">
+          <div class="packages-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
             <span class="offer packages__offer">Flash Offer</span>
             <!-- /.offer -->
             <img
@@ -303,7 +303,7 @@
             <!--/.packages-text-->
           </div>
           <!-- /.packages__item -->
-          <div class="packages-item">
+          <div class="packages-item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <span class="offer packages__offer">Flash Offer</span>
             <!-- /.offer -->
             <img

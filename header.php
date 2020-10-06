@@ -10,13 +10,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.php" class="logo">
+          <a href="index.php" class="logo" data-aos="fade-right"> 
             <img
               src="img/horizontal-logo.svg"
               alt="logo: Best Tour Plan"

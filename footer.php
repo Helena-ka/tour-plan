@@ -147,7 +147,6 @@
                 class="input footer__input phone"
                 placeholder="Phone Number*"
                 name="phone"
-                digits= "true"
                 required
               /></div>
               <textarea
@@ -180,10 +179,10 @@
       </div>
     </footer>
     <!-- /.footer -->
-    <div class="modal">
+    <div class="modal" >
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
-      <div class="modal__dialog">
+      <div class="modal__dialog" >
         <a href="" class="modal__close">
           <img src="img/close.svg" alt="icon: close" />
         </a>
@@ -206,7 +205,6 @@
             class="input modal__input phone"
             placeholder="Phone Number*"
             name="phone"
-            digits= "true"
             required
           /></div>
           <div class="modal__input-group">
@@ -238,6 +236,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="js/parallax.min.js"></script>
     </html>
